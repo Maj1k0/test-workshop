@@ -21,12 +21,11 @@ body {
   z-index: 1000;
   padding: 0 15px;
   box-sizing: border-box;
-  overflow-x: auto; /* 允许导航栏在小屏幕上水平滚动 */
 }
 
 .logo img {
-  width: 180px; /* 调整 logo 宽度 */
-  height: 40px;
+  width: 200px; /* 调整 logo 宽度 */
+  height: 50px;
   margin-right: 10px;
 }
 
@@ -34,20 +33,20 @@ body {
   display: flex;
   flex: 1;
   justify-content: space-around;
-  min-width: 600px; /* 确保导航链接在小屏上不被挤压 */
 }
 
 .links a {
   color: white;
-  padding: 8px 15px;
+  padding: 10px 20px;
+  margin: 5px 0;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  width: 120px;
+  font-size: 15px;
   line-height: 30px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   transition: background 0.3s, transform 0.2s;
-  flex-shrink: 0; /* 避免链接被挤压 */
 }
 
 .links a:hover {
@@ -58,13 +57,12 @@ body {
 /* 搜索框样式 */
 .search-container {
   position: relative;
-  flex-shrink: 0;
 }
 
 .search-input {
-  width: 150px;
-  padding: 6px 10px;
-  font-size: 13px;
+  width: 200px;
+  padding: 8px 15px;
+  font-size: 15px;
   border: 1px solid #e0dede96;
   border-radius: 20px;
   outline: none;
@@ -81,35 +79,42 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* 响应式设计 */
+/* 响应式设计 - 手机端等比缩小 */
 @media (max-width: 768px) {
-  /* 调整导航栏高度和内部元素 */
+  /* 导航栏等比缩小 */
   .navbar {
     height: 50px;
     padding: 0 10px;
   }
 
   .logo img {
-    width: 140px;
+    width: 150px;
     height: 30px;
   }
 
   .links a {
-    padding: 6px 10px;
-    font-size: 13px;
+    padding: 8px 15px;
+    font-size: 14px;
+    width: 100px;
+  }
+
+  /* 搜索框等比缩小 */
+  .search-container {
+    width: 100%;
+    text-align: center;
   }
 
   .search-input {
-    width: 120px;
-    padding: 5px 8px;
-    font-size: 12px;
+    width: 80%; /* 搜索框在手机端全宽 */
+    padding: 6px 10px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  /* 在小屏幕上进一步缩小导航栏元素 */
+  /* 导航栏进一步缩小 */
   .navbar {
-    height: 45px;
+    height: 40px;
     padding: 0 5px;
   }
 
@@ -119,13 +124,15 @@ body {
   }
 
   .links a {
-    padding: 4px 8px;
+    padding: 5px 10px;
     font-size: 12px;
+    width: auto;
   }
 
+  /* 搜索框进一步缩小 */
   .search-input {
-    width: 100px;
-    padding: 4px 6px;
-    font-size: 11px;
+    width: 90%;
+    padding: 5px 8px;
+    font-size: 12px;
   }
 }
