@@ -85,13 +85,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     document.querySelectorAll(".toggle-button").forEach((button) => {
       button.addEventListener("click", function () {
         const expandableContent = this.parentElement.nextElementSibling;
-        if (expandableContent.style.maxHeight) {
+        expandableContent.classList.toggle("show");
+        
+        if (expandableContent.classList.contains("show")) {
+          expandableContent.style.maxHeight = expandableContent.scrollHeight + "px";
+          this.textContent = "Hide details";
+        } else {
           expandableContent.style.maxHeight = null;
           this.textContent = "Show details";
-        } else {
-          expandableContent.style.maxHeight =
-            expandableContent.scrollHeight + "px";
-          this.textContent = "Hide details";
         }
       });
     });
@@ -120,7 +121,8 @@ document.addEventListener("DOMContentLoaded", async function () {
   });
 
   // 默认显示第一个学期
-  document.querySelector(".pagination a.active").click();
+  const defaultLink = document.querySelector(".pagination a.active") || paginationLinks[0];
+  if (defaultLink) defaultLink.click();
 
   // 检查 URL 参数来自动滚动和展开
   const urlParams = new URLSearchParams(window.location.search);
