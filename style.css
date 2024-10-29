@@ -24,7 +24,7 @@ body {
 }
 
 .logo img {
-  width: 250px;
+  width: 200px; /* 调整 logo 宽度 */
   height: 50px;
   margin-right: 10px;
 }
@@ -37,11 +37,11 @@ body {
 
 .links a {
   color: white;
-  padding: 10px 40px;
-  margin: 0 8px;
+  padding: 10px 20px;
+  margin: 5px 0;
   text-align: center;
   text-decoration: none;
-  width: 140px;
+  width: 120px;
   font-size: 15px;
   line-height: 30px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -54,33 +54,29 @@ body {
   transform: scale(1.05);
 }
 
-/* 底部标签栏 */
-.footer-bar {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(90deg, #0062e6, #33aeff);
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  justify-content: space-around;
-  box-sizing: border-box;
+/* 搜索框样式 */
+.search-container {
+  position: relative;
 }
 
-.footer-bar a {
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
+.search-input {
+  width: 200px;
+  padding: 8px 15px;
   font-size: 15px;
-  transition: background 0.3s, transform 0.2s;
+  border: 1px solid #e0dede96;
+  border-radius: 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: background 0.3s;
 }
 
-.footer-bar a:hover {
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-input:focus {
   background-color: rgba(255, 255, 255, 0.3);
-  transform: scale(1.05);
 }
 
 /* 响应式设计 - 手机端等比缩小 */
@@ -97,20 +93,21 @@ body {
   }
 
   .links a {
-    padding: 8px 20px;
-    font-size: 13px;
-    width: auto;
+    padding: 8px 15px;
+    font-size: 14px;
+    width: 100px;
   }
 
-  /* 底部标签栏等比缩小 */
-  .footer-bar {
-    height: 50px;
-    padding: 0 10px;
+  /* 搜索框等比缩小 */
+  .search-container {
+    width: 100%;
+    text-align: center;
   }
 
-  .footer-bar a {
-    font-size: 13px;
-    padding: 8px 10px;
+  .search-input {
+    width: 80%; /* 搜索框在手机端全宽 */
+    padding: 6px 10px;
+    font-size: 14px;
   }
 }
 
@@ -127,18 +124,15 @@ body {
   }
 
   .links a {
-    padding: 6px 10px;
+    padding: 5px 10px;
     font-size: 12px;
+    width: auto;
   }
 
-  /* 底部标签栏进一步缩小 */
-  .footer-bar {
-    height: 40px;
-    padding: 0 5px;
-  }
-
-  .footer-bar a {
+  /* 搜索框进一步缩小 */
+  .search-input {
+    width: 90%;
+    padding: 5px 8px;
     font-size: 12px;
-    padding: 6px 8px;
   }
 }
