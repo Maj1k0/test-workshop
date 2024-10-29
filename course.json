@@ -1,0 +1,82 @@
+[
+  {
+    "grade": 1,
+    "term": 1,
+    "code": "YYH123",
+    "name": "Genshin Impact",
+    "image": "https://upload.wikimedia.org/wikipedia/zh/9/94/Genshin_Impact.jpg",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 1,
+    "term": 1,
+    "code": "YYH456",
+    "name": "Arknights",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Arknights_icon.png",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 1,
+    "term": 1,
+    "code": "YYH",
+    "name": "Arknights",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Arknights_icon.png",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 4,
+    "term": 2,
+    "code": "YYH789",
+    "name": "Honkai: Star Rail",
+    "image": "https://upload.wikimedia.org/wikipedia/zh/1/11/Honkai%EF%BC%9AStar_Rail%E5%B4%A9%E5%A3%9E%EF%BC%9A%E6%98%9F%E7%A9%B9%E9%90%B5%E9%81%93.png",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 3,
+    "term": 2,
+    "code": "YYH987",
+    "name": "Honor of Kings",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut49y9vaQ1bKyVoyOylzo3fjOXlrdXfkCrQ&s",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 1,
+    "term": 3,
+    "code": "YYH111",
+    "name": "Honor of Kings",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut49y9vaQ1bKyVoyOylzo3fjOXlrdXfkCrQ&s",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 2,
+    "term": 1,
+    "code": "YYH121",
+    "name": "Honor of Kings",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut49y9vaQ1bKyVoyOylzo3fjOXlrdXfkCrQ&s",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  },
+  {
+    "grade": 2,
+    "term": 3,
+    "code": "YYH654",
+    "name": "Honor of Kings",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut49y9vaQ1bKyVoyOylzo3fjOXlrdXfkCrQ&s",
+    "references": ["Book 1", "Book 2"],
+    "readings": ["Article 1", "Article 2"],
+    "tools": ["Tool 1", "Tool 2"]
+  }
+]
